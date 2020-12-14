@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ican</title>
+    <style>
+        #content h4 {
+            margin-top: 100px;
+            max-width: 960px;
+            text-align: -webkit-left;
+        }
+
+
+
+        .titleImage {
+            max-width: 960px;
+            text-align: -webkit-left;
+        }
+
+
+        section #content p {
+            text-align: -webkit-left;
+            max-width: 960px;
+        }
+
+        ul li {
+            text-align: -webkit-left;
+            max-width: 700px;
+            list-style-position: inside;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon==" href="favicon.ico" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="apps.css">
+
+
+</head>
+<body style="background-color: wheat">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color: white">Internet </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="home.html" class="fa fa-home">Home</a></li>
+                    <li ><a href="about.html" class="fa fa-address-card-o" aria-hidden="true">About</a></li>
+                    <li><a href="internetInvention.html" class="fa fa-internet-explorer" aria-hidden="true"></i> Invention</a></li>
+                    <li><a href="browser.html" class="fa fa-safari" aria-hidden="true">Browser</a></li>
+                    <li><a href="people.html" class="fa fa-users" aria-hidden="true">People</a></li>
+                    <li><a href="ican.html" class="fa fa-lock" aria-hidden="true">ICAN</a></li>
+                    <li><a href="ip.html" class="fa fa-info-circle" aria-hidden="true" aria-hidden="true">IP</a></li>
+                    <li><a href="protocols.html" class="fa fa-search" aria-hidden="true">Protocols</a></li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="img-center">
+
+    </div>
+    <div class="about">
+    </div>
+    <section>
+        <div id="content">
+            <p style="font-size: 30px"><strong>Ican and DNS</strong></p>
+            <p>Published by: Anxhela Mehmetaj</p>
+            <img class="titleImage" src="icanexample.jpg">
+               <p> For example, the Temok’s website can be found at “temok.com” rather than “178.162.151.48” but the HTTP request will use the IP address provided by the DNS server. Another advantage of DNS is the prevention of a domain from being tied to any particular computer because the link between an IP address and domain name can be changed quickly. Once the change has occurred, it will take less than 48 hours because of constantly updating DNS infrastructure. Any domain name is based on two elements: before and after the dot. The element after the dot such as “com” “net” “gov” “edu” “org” and so on, is known as TLD (Top-Level-Domain). All domains under any particular TLD with their IP addresses are under one company known as ICANN registry.
+                This registry has the complete list of all domains under any TLD in a well-organized way.
+            </p>
+            <p style="font-size: 20px"><strong>The Internet Corporation for Assigned Numbers and Names.</strong></p>
+            <p>An American multistakeholder group, nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces and numerical spaces of the Internet, ensuring the network's stable and secure operation. ICANN performs the actual technical maintenance work of the Central Internet Address pools and DNS root zone registries pursuant to the Internet Assigned Numbers Authority (IANA) function contract.ICANN's primary principles of operation have been described as helping preserve the operational stability of the Internet; to promote competition; to achieve broad representation of the global Internet community;
+                and to develop policies appropriate to its mission through bottom-up, consensus-based processes.</p>
+
+            <h3> Domain Name</h3>
+            <p>
+                ICANN Focus is to manage Internet Protocol numbers and Domain Name System root. A domain name is an identification string that defines a realm of administrative autonomy, authority or control within the Internet.
+                Domain names are used in various networking contexts and for application-specific naming and addressing purposes.
+                </p>
+            <h3>DNS</h3>
+            <img class="titleImage" src="dnsexample.png">
+            <p>First Query</p>
+            <p>
+
+                1.Client 1 queries local DNS Server (1) for host www.mydomain.com. 2.Local DNS server doesn't know the Answer so it queries a Root DNS serever.(2) 3.Root server refers DNS server 1 to DNS server 3 responsible for .com domain name space. 4.DNS server 3 refers DNS server 1 to DNS server 4 responsible for the mydomain domain name space. 5. DNS server 4 returns the answer to DNS server 1. DNS server 1 returns the answer to client 1.
+            </p>
+            <p> Second Query</p>
+              <p>  1.Client 2 queries local DNS server(1) for host www.mydomain.com 2.DNS server 1 return the answer to client 2 from it's DNS cache.
+              </p>
+            <h3>DNS Structure</h3>
+<p>A system called the DNS associated names like www.example.com with the corresponding addresses. Computer uses the DNS to look up domain names and get the associated IP address which is used to connect your computer to the destination on the internet. One DNS server cannot handle all requests from all devices. So, DNS servers are distributed
+    into a hierarchy, and are divided into zones, splitting up responsibility for the major domain like org, com, .net, etc.</p>
+        </div>
+    </section>
+</header>
+
+</body>
+
+<footer >
+    <h4  style="font-size: 20px; text-align: center;  ">&copy; Copyright 2020, Anxhela Mehmetaj;
+        <a href="#" class="fa fa-facebook"  style="font-size: 20px;margin-left: 10px "></a>
+        <a href="#" class="fa fa-google"  style="font-size: 20px"></a>
+        <a href="#" class="fa fa-linkedin"  style="font-size: 20px"></a></h4>
+
+    </div>
+
+</footer>
+
+</html>
